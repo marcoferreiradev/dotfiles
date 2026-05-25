@@ -1,0 +1,10 @@
+.DS_Store
+*.local
+.env
+*.backup
+*.bak
+*.pre-stow-backup
+*.initial-snapshot
+
+# Defensive: se iTerm um dia for mal-configurado pra raiz do repo
+/com.googlecode.iterm2.plist

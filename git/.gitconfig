@@ -1,0 +1,23 @@
+[user]
+	name = marcoferreiradev
+	email = mw.marcowilliam@gmail.com
+
+[push]
+	autoSetupRemote = true
+
+[core]
+	pager = less -FRX
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = false
+
+[fetch]
+	prune = true
+
+# Local-machine settings (safe.directory, etc.) ficam em ~/.gitconfig.local
+# que NÃO é versionado.
+[include]
+	path = ~/.gitconfig.local
