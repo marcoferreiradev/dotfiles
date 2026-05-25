@@ -1,5 +1,9 @@
-# marcoferreiradev/dotfiles Brewfile
+# marcoferreiradev/dotfiles — Brewfile (dev)
 # Aplique com: `brew bundle` (na raiz do repo)
+#
+# Buckets opt-in (instalar separadamente em Mac novo, se quiser):
+#   brew bundle --file=Brewfile.system    # utilitários macOS (alt-tab, linearmouse, ...)
+#   brew bundle --file=Brewfile.personal  # apps pessoais (Notion, Spotify)
 
 # ============================================================================
 # Taps
@@ -18,9 +22,9 @@ brew "dust"       # du moderno
 brew "btop"       # top moderno
 brew "ripgrep"    # grep rápido (rg)
 
-# Shell + prompt
-brew "starship"   # prompt em Rust
+# Shell + multiplexer
 brew "stow"       # symlinks dos dotfiles
+brew "tmux"       # terminal multiplexer
 brew "fzf"        # fuzzy finder
 brew "zoxide"     # cd inteligente (alias cd=z)
 
@@ -40,7 +44,6 @@ brew "watchman"   # file watcher (React Native)
 
 # Tooling pessoal
 brew "rtk"        # token-killer proxy
-brew "mole"       # mac cleaner
 brew "wget"
 
 # CLIs específicos
@@ -48,23 +51,11 @@ brew "supabase/tap/supabase"
 brew "vtex/vtex/vtex"
 
 # ============================================================================
-# Casks (apps GUI)
+# Casks (apps GUI — dev)
 # ============================================================================
-# Editor / dev
 cask "visual-studio-code"
 cask "cursor"     # editor primário; instalar via brew em mac novo
 cask "ngrok"
-
-# Sistema / produtividade
-cask "alt-tab"           # Cmd+Tab estilo Windows
-cask "hiddenbar"         # menu bar manager
-cask "stats"             # menu bar stats
-cask "linearmouse"       # mouse customization
-cask "logi-options+"     # driver Logitech
-cask "scroll-reverser"   # inverte scroll mouse
-cask "smoothscroll"      # scroll suave
-cask "notion"
-cask "spotify"
 
 # Cloud / mobile
 cask "gcloud-cli"

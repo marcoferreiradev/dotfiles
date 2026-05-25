@@ -7,8 +7,8 @@ cd "$(dirname "$0")"
 echo "==> brew bundle"
 brew bundle
 
-echo "==> stow zsh starship git cursor"
-stow zsh starship git cursor
+echo "==> stow zsh git cursor tmux"
+stow zsh git cursor tmux
 
 echo "==> Cursor extensions"
 if command -v cursor &>/dev/null && [[ -f cursor-extensions.txt ]]; then

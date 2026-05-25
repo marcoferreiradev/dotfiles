@@ -1,0 +1,15 @@
+# Brewfile.system — utilitários macOS (opt-in)
+# Aplique com: `brew bundle --file=Brewfile.system`
+#
+# Casks que ajustam o comportamento do sistema (atalhos, mouse, menu bar).
+# Não fazem parte do `brew bundle` default — instale só se quiser o setup completo.
+
+cask "alt-tab"           # Cmd+Tab estilo Windows
+cask "hiddenbar"         # menu bar manager
+cask "stats"             # menu bar stats
+cask "linearmouse"       # mouse customization
+cask "logi-options+"     # driver Logitech
+cask "scroll-reverser"   # inverte scroll mouse
+cask "smoothscroll"      # scroll suave
+
+brew "mole"              # mac cleaner CLI

@@ -1,0 +1,8 @@
+# Brewfile.personal — apps pessoais (opt-in)
+# Aplique com: `brew bundle --file=Brewfile.personal`
+#
+# Apps de uso recreativo/produtividade pessoal. Não fazem parte do
+# `brew bundle` default — instale só se for o seu Mac pessoal completo.
+
+cask "notion"
+cask "spotify"

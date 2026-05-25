@@ -1,4 +1,4 @@
-# ~/.zshrc — Zsh configuration (Zinit + Starship)
+# ~/.zshrc — Zsh configuration (Zinit + Spaceship)
 # Managed by ~/dotfiles via GNU Stow
 
 # ============================================================================
@@ -39,7 +39,6 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 # OMZ libs + git plugin (gives gs/ga/gc/gp/gco/gd/gb aliases)
 zinit snippet OMZL::git.zsh
-zinit snippet OMZL::async_prompt.zsh
 zinit snippet OMZP::git
 zinit cdclear -q
 setopt promptsubst
@@ -140,9 +139,9 @@ alias update-my-skills="bash <(gh api repos/marcoferreiradev/essential-skills/co
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 # ============================================================================
-# Starship prompt (after everything that touches PATH)
+# Spaceship prompt (after everything that touches PATH)
 # ============================================================================
-eval "$(starship init zsh)"
+zinit light spaceship-prompt/spaceship-prompt
 
 # ============================================================================
 # Zoxide (MUST stay at very end — hooks PATH at init time)
